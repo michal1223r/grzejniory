@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nieczadowe Grzejniki - Twój zimny partner</title>
+</head>
+<body>
+    <header>
+        <h1>Nieczadowe Grzejniki</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="">Produkty</a></li>
+                <li><a href="#search">Wyszukiwarka</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search">
+        <h2>Wyszukiwarka Produktów</h2>
+        <form action="#" method="get" id="searchForm">
+            <label for="searchInput">Wpisz nazwę produktu:</label>
+            <input type="text" id="searchInput" name="query" required>
+            <button type="button" onclick="searchProducts()">Szukaj</button>
+        </form>
+        <div id="searchResults"></div>
+    </section>
+
+    <section id="products">
+        <div class="product">
+            <p>Wspaniały grzejnik, ogrzeje twoje samotne serce.</p>
+            <img src="img/grzejnik1.png" alt="Grzejnik 1">
+            <p>15.33zł <button onclick="buyProduct('Grzejnik 1')"> Kup</button></p>
+        </div>
+        <div class="product">
+            <p>Mega super fajny polecam.</p>
+            <img src="img/grzejnik2.png" alt="Grzejnik 2">
+            <p>154.32zł <button onclick="buyProduct('Grzejnik 2')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Elegancki grzejnik z funkcją regulacji temperatury.</p>
+            <img src="img/grzejnik3.png" alt="Grzejnik 3">
+            <p>249.99zł <button onclick="buyProduct('Grzejnik 3')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Nowoczesny grzejnik z pilotem zdalnego sterowania.</p>
+            <img src="img/grzejnik4.png" alt="Grzejnik 4">
+            <p>299.50zł <button onclick="buyProduct('Grzejnik 4')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Designerski grzejnik w kształcie kwiatu.</p>
+            <img src="img/grzejnik5.png" alt="Grzejnik 5">
+            <p>189.75zł <button onclick="buyProduct('Grzejnik 5')"> Kup</button></p>
+        </div>
+        <div class="product">
+            <p>Wspaniały grzejnik, NIE ogrzeje twojego samotnego serca.</p>
+            <img src="img/grzejnik6.png" alt="Grzejnik 6">
+            <p>15.33zł <button onclick="buyProduct('Grzejnik 6')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Nowoczesny grzejnik z funkcją regulacji temperatury.</p>
+            <img src="img/grzejnik7.png" alt="Grzejnik 7">
+            <p>154.32zł <button onclick="buyProduct('Grzejnik 7')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Elegancki grzejnik w stylu retro.</p>
+            <img src="img/grzejnik8.png" alt="Grzejnik 8">
+            <p>249.99zł <button onclick="buyProduct('Grzejnik 8')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Renault Laguna 2.0 Dynamique</p>
+            <img src="img/grzejnik9.png" alt="Grzejnik 9">
+            <p>25900.50zł <button onclick="buyProduct('Renault Laguna 2.0 Dynamique')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Designerski grzejnik w kształcie gitary.</p>
+            <img src="img/grzejnik10.png" alt="Grzejnik 10">
+            <p>189.75zł <button onclick="buyProduct('Grzejnik 10')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Przenośny grzejnik na bazie oleju.</p>
+            <img src="img/grzejnik11.png" alt="Grzejnik 11">
+            <p>99.99zł <button onclick="buyProduct('Grzejnik 11')"> Kup</button></p>
+        </div>
+    
+        <div class="product">
+            <p>Grzejnik wiszący, idealny do małych pomieszczeń oraz dużych pomieszczeń.</p>
+            <img src="img/grzejnik12.png" alt="Grzejnik 12">
+            <p>79.95zł <button onclick="buyProduct('Grzejnik 12')"> Kup</button></p>
+        </div>
+        <!-- inne produkty -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nieczadowe Grzejniki</p>
+    </footer>
+
+    <script>
+        function buyProduct(productName) {
+            alert('Dodano do koszyka: ' + productName);
+        }
+        function searchProducts(){
+            alert('Wyszukiwarka tymczasowo wyłączona.')
+        }
+    </script>
+</body>
+</html>

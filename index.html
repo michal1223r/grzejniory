@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nieczadowe Grzejniki - Twój zimny partner</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <h1>Nieczadowe Grzejniki</h1>
+        <nav>
+            <ul>
+                <li><a href="">Strona główna</a></li>
+                <li><a href="produkty.html">Produkty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#" id="showLicense">Licencja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Witaj w sklepie Nieczadowe Grzejniki</h2>
+        <p>Znajdź zimny grzejnik dla swojego ogrodu!</p>
+        <h3>Nasze Produkty</h3>
+        <p>
+            <h5>W naszej ofercie można znaleźć różne produkty takie jak:<br></h5>
+            <h5 id="h5g"><b>Grzejniki Olejowe,
+            Grzejniki Konwektorowe,
+            Grzejniki Elektryczne Podłogowe,
+            Grzejniki Kątowe,
+            Grzejniki Łazienkowe,
+            Grzejniki Zdalnie Sterowane,
+            Grzejniki na Gaz</b></h5>
+        </p>
+    </section>
+
+    <div id="licenseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLicense">&times;</span>
+            <h2>Umowa Licencyjna</h2>
+            <p>
+                Preambuła:
+                Ta umowa licencyjna ("Umowa") jest zawierana między Tobą ("Licencjobiorca") a GRZEJNIKI ("Licencjodawca") w związku z oprogramowaniem do celów testowych ("Oprogramowanie").
+                
+                1. Przedmiot Umowy:
+                1.1 Licencjodawca udziela Licencjobiorcy ograniczonej, nieprzenoszalnej licencji na używanie Oprogramowania wyłącznie do celów testowych.
+                
+                2. Zakres Licencji:
+                2.1 Licencja obejmuje prawo do instalowania i używania Oprogramowania na jednym komputerze w danym czasie.
+                
+                3. Ograniczenia:
+                3.1 Licencjobiorca nie ma prawa kopiować, modyfikować, sublicencjonować, przekazywać ani udostępniać Oprogramowania osobom trzecim bez wyraźnej zgody Licencjodawcy.
+                
+                4. Okres ważności Licencji:
+                4.1 Licencja jest ważna przez okres trwania testów, zdefiniowany przez Licencjodawcę.
+                
+                5. Własność intelektualna:
+                5.1 Licencjodawca zachowuje pełne prawo własności intelektualnej do Oprogramowania. Żadne prawa nie są przenoszone na Licencjobiorcę, poza uprawnieniami udzielonymi. 
+            </p>
+        </div>
+    </div>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Zadzwoń do nas: 123-456-789</p>
+        <p>Adres email: info@nieczadowe-grzejniki.pl</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nieczadowe Grzejniki</p>
+    </footer>
+
+    <script>
+        document.getElementById('showLicense').addEventListener('click', function() {
+        document.getElementById('licenseModal').style.display = 'block';
+        });
+
+        document.getElementById('closeLicense').addEventListener('click', function() {
+        document.getElementById('licenseModal').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('licenseModal')) {
+                document.getElementById('licenseModal').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
